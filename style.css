@@ -1,0 +1,182 @@
+/* Brew Haven Coffee — Step 5: HTML + CSS */
+/* Colours used only: Espresso Brown #2B1D16, Cream #FAF6F0,
+   Caramel #C68B4E, Soft Sage #DDE5D4, Dark Brown #3A2F28 */
+
+/* Page base: body text uses Inter, 16px, line height 1.6 */
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #3A2F28;
+  background-color: #FAF6F0;
+}
+
+/* Headings use Playfair Display, with Georgia as fallback */
+h1, h2, h3, .logo {
+  font-family: "Playfair Display", Georgia, serif;
+  color: #2B1D16;
+}
+
+h1 { font-size: 40px; }
+h2 { font-size: 28px; }
+
+/* Header and navigation */
+header {
+  background-color: #2B1D16;
+  padding: 16px;
+}
+
+header nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #FAF6F0;
+  font-size: 22px;
+  margin: 0;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header a {
+  color: #FAF6F0;
+  text-decoration: none;
+}
+
+/* Links turn caramel when hovered over */
+header a:hover {
+  color: #C68B4E;
+}
+
+/* Sections: centred, with space between them */
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Images always fit their container, so they resize on a phone */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Buttons and prices use Caramel */
+.button, form button {
+  display: inline-block;
+  background-color: #C68B4E;
+  color: #FAF6F0;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.price {
+  color: #C68B4E;
+  font-weight: bold;
+}
+
+/* Menu cards: 4 columns on desktop */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.menu-card {
+  background-color: #FAF6F0;
+  border: 1px solid #DDE5D4;
+  padding: 16px;
+  text-align: center;
+}
+
+/* Study space features and video placeholder */
+.features {
+  display: flex;
+  gap: 20px;
+}
+
+.features p {
+  background-color: #DDE5D4;
+  padding: 16px;
+  flex: 1;
+  text-align: center;
+}
+
+/* Video: full width of its section, height scales with width, no sideways scroll */
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+}
+
+/* Student offer strip */
+.offer {
+  background-color: #DDE5D4;
+  text-align: center;
+}
+
+/* Contact form: labels above each input, full width */
+form label {
+  display: block;
+  margin-top: 12px;
+}
+
+form input, form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+/* Footer */
+footer {
+  background-color: #2B1D16;
+  color: #FAF6F0;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 4px 0;
+}
+
+/* Mobile layout: smaller headings, stacked cards and navigation */
+@media (max-width: 600px) {
+  h1 { font-size: 28px; }
+  h2 { font-size: 22px; }
+
+  header nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+}

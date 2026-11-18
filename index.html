@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew Haven Coffee</title>
+  <!-- Google Fonts: headings use Playfair Display, body text uses Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Header / Navigation -->
+  <!-- The links jump to sections on the same page using their id values. -->
+  <header>
+    <nav>
+      <p class="logo">Brew Haven Coffee</p>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#study-space">Study Space</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 2. Hero Section -->
+    <section id="home" class="hero">
+      <img src="images/hero-coffee.jpg" alt="A cup of coffee">
+      <h1>Good coffee. Quiet space to study.</h1>
+      <p>Brew Haven is a small café near campus, made for long study sessions and slow mornings.</p>
+      <p>
+        <a class="button" href="#menu">See the Menu</a>
+        <a class="button" href="#contact">Find Us</a>
+      </p>
+    </section>
+
+    <!-- 3. About Section -->
+    <section id="about">
+      <h2>About</h2>
+      <img src="images/cafe-interior.jpg" alt="Inside Brew Haven Coffee">
+      <p>We keep the music low, the tables big and the coffee honest. Come alone with a laptop, or bring your study group — there is a seat for both.</p>
+    </section>
+
+    <!-- 4. Menu Section -->
+    <section id="menu">
+      <h2>Menu</h2>
+      <img src="images/menu-coffee.jpg" alt="Coffee and croissant at Brew Haven Coffee">
+      <div class="menu-grid">
+        <article class="menu-card">
+          <h3>House Latte</h3>
+          <p>Smooth espresso with steamed milk, our everyday favourite.</p>
+          <p class="price">RM 12</p>
+        </article>
+        <article class="menu-card">
+          <h3>Cold Brew</h3>
+          <p>Slow-steeped for 18 hours, served over ice.</p>
+          <p class="price">RM 13</p>
+        </article>
+        <article class="menu-card">
+          <h3>Matcha Latte</h3>
+          <p>Ceremonial matcha, lightly sweetened, with oat milk.</p>
+          <p class="price">RM 14</p>
+        </article>
+        <article class="menu-card">
+          <h3>Butter Croissant</h3>
+          <p>Baked fresh every morning, flaky outside, soft inside.</p>
+          <p class="price">RM 9</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. Study Space Section -->
+    <section id="study-space">
+      <h2>Study Space</h2>
+      <div class="features">
+        <p>☕ Free Wi-Fi</p>
+        <p>🔌 Power Sockets at Every Table</p>
+        <p>📖 Quiet Study Zone</p>
+      </div>
+      <!-- Embedded video: controls on, no autoplay. -->
+      <video controls preload="metadata">
+        <source src="video/coffee-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- 6. Student Offer -->
+    <section class="offer">
+      <h2>Student Offer</h2>
+      <p>Show your student card for 10% off, Monday to Friday, 2–5 pm.</p>
+    </section>
+
+    <!-- 7. Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Address:</strong> 12 Campus Street, University Town</p>
+      <p><strong>Opening Hours:</strong> Monday – Sunday, 8:00 am – 10:00 pm</p>
+      <p><strong>Phone:</strong> 012-345 6789</p>
+      <!-- Simple form, display only. It does not send data anywhere. -->
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- 8. Footer -->
+  <footer>
+    <p>Brew Haven Coffee — Brewed for study breaks.</p>
+    <p>&copy; 2026 Brew Haven Coffee. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
